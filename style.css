@@ -1,0 +1,213 @@
+body {
+	font-family: sans-serif;
+	color: #fff;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: black;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#master {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+#topnav-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width: 100%;
+	height: 6vh;
+	background-color: red;
+	z-index: 3;
+}
+
+.topnav {
+	width: 100%;
+	max-width: 100%;
+	height: 6vh;
+  background-color: green;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.topnav li{
+  float: left;
+  height: 6vh;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: auto;
+}
+
+.topnav li:hover {
+  background-color: red;
+  color: black;
+}
+
+.topnav li:active {
+	background-color: orange;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollback-track {
+	background: #2d2733;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #dcbfff;
+}
+
+#main {
+	top: auto;
+	left: 0;
+	min-height: 30em;
+	background-color: #151218;
+	height:100%;
+	display: flex;
+}
+
+.main-content {
+	position: absolute;
+	left: 0;
+	top: 6vh;
+	padding: 10px;
+	height: 94%;
+	background-color: #151218;
+	color: black;
+}
+
+#map-container {
+	visibility: visible;
+	width: 100%;
+}
+
+#m-d-container {
+	visibility: hidden;
+	background-color: darkgray;
+	overflow-y: auto;
+}
+
+#incel-container{
+	visibility: hidden;
+	overflow-y: auto;
+	background-color: darkgray;
+}
+
+.main-content ul {
+	padding: 10px;
+}
+
+svg {
+	width: 100%;
+	height: 100%;
+}
+
+path {
+	fill: #443d4b;
+	stroke: #dcbfff;
+	transition: 100ms;
+	cursor: pointer;
+}
+
+path:hover {
+	fill: #c99aff;
+}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: darkgray;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
+  z-index: 5;
+  color: black;
+}
+
+
+#country-name {
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-size: 300%;
+}
+
+#fertility-chart { 
+	width: 100%;
+	height: 100%;
+}
+
+#wec{
+	height: 39%;
+}
+
+#cag {
+	height: 40%;
+}
+
+.country-information {
+	background-color: darkgray;
+	color: black;
+	height: 100%;
+	max-height: 100%;
+	visibility: hidden;
+}
+
+.country-info {
+	color: black;
+	visibility: hidden;
+}
+
+.closebtn {
+  position: absolute;
+  color: white;
+  top: 0;
+  right: 0;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.closebtn:hover{
+	background-color: lightslategrey;
+}
+
+.md-column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.md-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1 {
+	text-decoration: underline;
+	text-align: center;
+}
